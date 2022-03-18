@@ -1,0 +1,283 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+  /* ul有默认的margin和padding值 */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.search-index {
+  display: flex;
+  /* 固定定位与父元素无关，以屏幕为主，用max-width和min-width限定宽度 */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  /* 固定的盒子应该有宽度 */
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
+  height: 44px;
+  z-index: 999;
+}
+
+.search {
+  position: relative;
+  height: 26px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 7px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  height: 15px;
+  width: 15px;
+  background: url(../images/spirites.png) no-repeat;
+  background-size: 22px auto;
+}
+
+.user {
+  width: 44px;
+  height: 44px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.user::before {
+  content: "";
+  display: block;
+  height: 22px;
+  width: 22px;
+  background: url(../images/spirites.png) no-repeat 0 -37px;
+  background-size: 22px auto;
+  margin: 4px auto -2px;
+}
+
+/*goBack*/
+.goBack {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: url(../images/goBack.png) no-repeat;
+  background-size: 38px 38px;
+}
+
+/* foucus */
+.focus {
+  position: relative;
+  overflow: hidden;
+}
+
+.focus img {
+  width: 100%;
+}
+
+.focus ul {
+  overflow: hidden;
+  width: 500%;
+  margin-left: -100%;
+}
+
+.focus ul li {
+  float: left;
+  width: 20%;
+}
+
+.focus ol {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  margin: 0;
+}
+
+.focus ol li {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  list-style: none;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.focus ol li.current {  /*.current 前面不要有空格*/
+  width: 20px;
+}
+
+/* local-nav */
+.local-nav {
+  display: flex;
+  height: 64px;
+  margin: 3px 4px;
+  border-radius: 8px;
+}
+
+.local-nav li {
+  flex: 1;
+}
+
+.local-nav a {
+  display: flex;
+  flex-direction: column;
+  /* 侧轴居中对齐 单行 */
+  align-items: center;
+  font-size: 12px;
+}
+
+.local-nav li [class^="local-nav-icon"] {
+  width: 32px;
+  height: 32px;
+  margin-top: 8px;
+  background: url(../images/ul-spirites.png) no-repeat -4px -6px;
+  background-size: 40px auto;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+  background-position: -4px -46px;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+  background-position: -4px -85px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+  background-position: -4px -126px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+  background-position: -4px -166px;
+}
+
+/* nav */
+nav {
+  border-radius: 8px;
+  margin: 0 4px 3px;
+  overflow: hidden;
+}
+
+.nav-common {
+  display: flex;
+  height: 78px;
+  background-color: pink;
+}
+
+.nav-common:nth-child(1) {
+  background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+
+.nav-common:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+  margin: 4px 0;
+}
+
+.nav-common:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+.nav-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-items:nth-child(-n+2) {
+  border-right: 1px solid #fff;
+}
+
+.nav-items a {
+  flex: 1;
+  text-align: center;
+  line-height: 39px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items a:nth-child(1) {
+  border-bottom: 1px solid #fff;
+}
+
+.nav-items:nth-child(1) a {
+  border: 0;
+  background: url(../images/hotel.png) no-repeat bottom center;
+  background-size: 73px auto;
+  line-height: 60px;
+}
+
+.nav-items-item2 {
+  background: url(../images/flight.png);
+}
+
+.nav-items-item3 {
+  background: url(../images/hotel.png);
+}
+
+/* subnav-entry */
+.subnav-entry {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 4px;
+  padding: 5px 0;
+}
+
+.subnav-entry li {
+  /* 里面的子盒子可以写百分比 相对于父盒子来说 */
+  flex: 20%;
+}
+
+.subnav-entry a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+[class^="subnav-entry-icon"] {
+  width: 28px;
+  height: 28px;
+  margin-top: 4px;
+  background: url(../images/subnav.png) no-repeat;
+  background-size: 28px auto;
+}
+
+.subnav-entry-icon-icon2 {
+  background-position: 0px -28px;
+}

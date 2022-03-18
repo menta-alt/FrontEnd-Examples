@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单全选取消案例</title>
+  <style>
+    table {
+      width: 300px;
+      margin: 100px auto;
+      text-align: center;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead tr {
+      height: 30px;
+      background-color: skyblue;
+    }
+
+    tbody tr {
+      height: 30px;
+    }
+
+    tbody td {
+      border-bottom: 1px solid #d7d7d7;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <input type="checkbox" id="j_cbAll">
+        </th>
+        <th>商品</th>
+        <th>价钱</th>
+      </tr>
+    </thead>
+    <tbody id="j_tbs">
+      <tr>
+        <td>
+          <input type="checkbox" />
+        </td>
+        <td>iphone</td>
+        <td>8000</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" />
+        </td>
+        <td>HUAWEI</td>
+        <td>6000</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" />
+        </td>
+        <td>IpadAir</td>
+        <td>3000</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" />
+        </td>
+        <td>MI</td>
+        <td>5000</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    //1.全选和取消的做法 让所有的复选框的checked属性跟随全选按钮
+    var j_cbAll = document.getElementById('j_cbAll'); //全选按钮
+    var j_tbs = document.getElementById('j_tbs').getElementsByTagName('input');
+    j_cbAll.onclick = function () {
+      for (var i = 0; i < j_tbs.length; i++) {
+        j_tbs[i].checked = this.checked;
+      }
+    }
+    for (var i = 0; i < j_tbs.length; i++) {
+      j_tbs[i].onclick = function () {
+        //flag 控制全选按钮是否选中
+        var flag = true;
+        //每次点击下面的复选框都要循环检查4个小按钮是否被全选中
+        for (var i = 0; i < j_tbs.length; i++) {
+          if (!j_tbs[i].checked) {
+            flag = false;
+            break;  //提高执行效率
+          }
+        }
+        j_cbAll.checked=flag; //一定要放在for循环的下面
+      }
+    }
+  </script>
+</body>
+
+</html>
