@@ -1,10 +1,11 @@
-# 案例制作（三）——JS
+案例制作（三）——JS
 
 [TOC]
 
 ## 1. 循环精灵图背景
 
-![image-20210326171549383](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326171549383.png)
+- 首先精灵图片排列有规律
+- 核心思路：利用for循环，修改精灵图的背景位置background-position
 
 ```html
 <div class="box">
@@ -51,7 +52,7 @@
 
 ## 2. 显示隐藏文本框内容
 
-![image-20210326173345510](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326173345510.png)
+> 需求：当鼠标点击文本框时，里面的默认文字隐藏，当鼠标离开文本框时，里面的文字显示
 
 ```html
 <input type="text" value="嘻嘻嘻">
@@ -87,15 +88,17 @@ input {
 
 ## 3. 密码框验证信息
 
-![image-20210326184340066](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326184340066.png)
+- 首先判断的事件时表单时去焦点 onblur
+- 如果输入正确则提示正确的信息，颜色为绿色，小图标变化
+- 如果输入的不是6~16位，则提示错误信息，颜色为红色，小图标变化
 
-![image-20210326185019059](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326185019059.png)
+![image-20210326185019059](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%AF%86%E7%A0%81%E6%A1%86%E9%AA%8C%E8%AF%81%E4%BF%A1%E6%81%AF)
 
 
 
 ## 4. 排他思想（算法）
 
-![image-20210326191214404](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326191214404.png)
+![image-20210326191214404](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E6%8E%92%E4%BB%96%E6%80%9D%E6%83%B3%EF%BC%88%E7%AE%97%E6%B3%95%EF%BC%89)
 
 ```html
 <button>按钮1</button>
@@ -173,7 +176,7 @@ body {
 
 ## 6. 表格隔行换色
 
-![image-20210326201118931](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326201118931.png)
+![image-20210326201118931](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E8%A1%A8%E6%A0%BC%E9%9A%94%E8%A1%8C%E6%8D%A2%E8%89%B2)
 
 ```html
 <table>
@@ -264,9 +267,9 @@ tbody td {
 
 ## 7. 表单全选取消案例
 
-![image-20210326204815036](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326204815036.png)
+![image-20210326204815036](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E8%A1%A8%E5%8D%95%E5%85%A8%E9%80%89%E5%8F%96%E6%B6%88%E6%A1%88%E4%BE%8B)
 
-![image-20210326210757816](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210326210757816.png)
+![image-20210326210757816](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E8%A1%A8%E5%8D%95%E5%85%A8%E9%80%89%E5%8F%96%E6%B6%88%E6%A1%88%E4%BE%8B2)
 
 ```html
 <table>
@@ -364,9 +367,9 @@ tbody td {
 
 ## 8. tab栏切换（重点）
 
-![image-20210327092220603](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210327092220603.png)
+![image-20210327092220603](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/tab%E6%A0%8F%E5%88%87%E6%8D%A2)
 
-![image-20210327095402022](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210327095402022.png)
+![image-20210327095402022](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/tab)
 
 ```html
  <div class="tab">
@@ -605,7 +608,7 @@ a {
 
 ## 10. 发布留言简单版
 
-![image-20210327140506029](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210327140506029.png)
+![image-20210327140506029](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%8F%91%E5%B8%83%E7%95%99%E8%A8%80%E7%AE%80%E5%8D%95%E7%89%88)
 
 ```html
 <textarea name="" id="" cols="30" rows="10">123</textarea>
@@ -658,7 +661,7 @@ li a {
 
 ## 11.动态生成表格
 
-![image-20210327141556850](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210327141556850.png)
+![image-20210327141556850](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E8%A1%A8%E6%A0%BC)
 
 ```html
 <table cellspacing="0">
@@ -740,7 +743,7 @@ thead tr {
 
 ## 12. 跟随鼠标移动的天使
 
-![image-20210328124732962](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210328124732962.png)
+![image-20210328124732962](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E6%8C%89%E6%8C%89%E9%94%AE%E8%BE%93%E5%85%A5%E6%A1%86%E8%8E%B7%E5%BE%97%E7%84%A6%E7%82%B9)
 
 ```html
 <img src="../../images/1.gif" alt="">
@@ -770,7 +773,7 @@ img {
 
 ## 13. 按按键输入框获得焦点
 
-![image-20210329122710314](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329122710314.png)
+![image-20210329122710314](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E8%B7%9F%E9%9A%8F%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E7%9A%84%E5%A4%A9%E4%BD%BF)
 
 ```html
 <input type="text" name="" id="">
@@ -788,9 +791,9 @@ img {
 
 ## 14. 京东快递单号查询
 
-![image-20210329123353189](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329123353189.png)
+![image-20210329123353189](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BA%AC%E4%B8%9C%E5%BF%AB%E9%80%92%E5%8D%95%E5%8F%B7%E6%9F%A5%E8%AF%A2)
 
-![image-20210329132914383](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329132914383.png)
+![image-20210329132914383](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BA%AC%E4%B8%9C%E5%BF%AB%E9%80%92%E5%8D%95%E5%8F%B7%E6%9F%A5%E8%AF%A22)
 
 ```html
 <div class="search">
@@ -861,9 +864,9 @@ img {
 
 ## 15. 倒计时
 
-![image-20210329163137082](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329163137082.png)
+![image-20210329163137082](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%80%92%E8%AE%A1%E6%97%B6)
 
-![image-20210329170407020](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329170407020.png)
+![image-20210329170407020](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%80%92%E8%AE%A1%E6%97%B62)
 
 ```html
 <div>
@@ -918,9 +921,9 @@ span {
 
 ## 16. 发送短信定时器
 
-![image-20210329170754791](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329170754791.png)
+![image-20210329170754791](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%8F%91%E9%80%81%E7%9F%AD%E4%BF%A1%E5%AE%9A%E6%97%B6%E5%99%A8)
 
-![image-20210329171618444](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210329171618444.png)
+![image-20210329171618444](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E5%8F%91%E9%80%81%E7%9F%AD%E4%BF%A1%E5%AE%9A%E6%97%B6%E5%99%A82)
 
 ```html
 <body>
@@ -977,7 +980,7 @@ span {
 
 ## 18、获取url参数
 
-![image-20210405154015983](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210405154015983.png)
+![image-20210405154015983](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E8%8E%B7%E5%8F%96url%E5%8F%82%E6%95%B0)
 
 login.html
 
@@ -1028,9 +1031,9 @@ index.html
 
 ## 20、模态框拖拽
 
-![image-20210405172059344](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210405172059344.png)
+![image-20210405172059344](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E6%A8%A1%E6%80%81%E6%A1%86%E6%8B%96%E6%8B%BD)
 
-![image-20210407161859855](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210407161859855.png)
+![image-20210407161859855](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E6%A8%A1%E6%80%81%E6%A1%86%E6%8B%96%E6%8B%BD2)
 
 ```html
 <body>
@@ -1202,11 +1205,11 @@ a {
 
 ## 21、仿京东放大镜
 
-![image-20210407163813282](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210407163813282.png)
+![image-20210407163813282](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E4%BA%AC%E4%B8%9C%E6%94%BE%E5%A4%A7%E9%95%9C)
 
-![image-20210407171830996](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210407171830996.png)
+![image-20210407171830996](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BA%AC%E4%B8%9C%E6%94%BE%E5%A4%A7%E9%95%9C2)
 
-![image-20210407171914400](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210407171914400.png)
+![image-20210407171914400](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BA%AC%E4%B8%9C%E6%94%BE%E5%A4%A7%E9%95%9C)
 
 ```html
 <body>
@@ -1329,11 +1332,11 @@ window.addEventListener('load', function () {
 
 ## 22、仿淘宝固定侧边栏
 
-![image-20210407232530925](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210407232530925.png)
+![image-20210407232530925](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E5%9B%BA%E5%AE%9A%E4%BE%A7%E8%BE%B9%E6%A0%8F)
 
-![image-20210407233556843](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210407233556843.png)
+![image-20210407233556843](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E5%9B%BA%E5%AE%9A%E4%BE%A7%E8%BE%B9%E6%A0%8F))
 
-![image-20210410141349715](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410141349715.png)
+![image-20210410141349715](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E5%9B%BA%E5%AE%9A%E4%BE%A7%E8%BE%B9%E6%A0%8F2)
 
 ```html
 <body>
@@ -1539,27 +1542,27 @@ function animate(obj, target, callback) {  //前面必须要加function关键字
 
 
 
-## 24、放淘宝网页轮播图
+## 24、仿淘宝网页轮播图
 
-![image-20210408124424728](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210408124424728.png)
+![image-20210408124424728](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE)
 
-![image-20210408124445363](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210408124445363.png)  
+![image-20210408124445363](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE2)  
 
-![image-20210410084324325](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410084324325.png)
+![image-20210410084324325](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE3)
 
-![image-20210410091027493](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410091027493.png)
+![image-20210410091027493](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE6)
 
-![image-20210410094028743](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410094028743.png)
+![image-20210410094028743](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE7)
 
-![image-20210410122303995](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410122303995.png)
+![image-20210410122303995](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE8)
 
 ### 24.1自动播放功能
 
-![image-20210410125553266](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410125553266.png)
+![image-20210410125553266](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE4)
 
 ### 24.2 节流阀
 
-![image-20210410135600010](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410135600010.png)
+![image-20210410135600010](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE5)
 
 ```html
 <!DOCTYPE html>
@@ -2930,6 +2933,6 @@ function animate(obj, target, callback) {  //前面必须要加function关键字
 
 ## 25、筋斗云案例
 
-![image-20210410141602317](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410141602317.png)
+<img src="https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E7%AD%8B%E6%96%97%E4%BA%91%E6%A1%88%E4%BE%8B" alt="image-20210410141602317" style="zoom: 80%;" />
 
-![image-20210410143010879](C:\Users\小萌\AppData\Roaming\Typora\typora-user-images\image-20210410143010879.png)
+![image-20210410143010879](https://cdn.jsdelivr.net/gh/menta-alt/Pictures/typora_img/%E7%AD%8B%E6%96%97%E4%BA%91%E6%A1%88%E4%BE%8B2)
